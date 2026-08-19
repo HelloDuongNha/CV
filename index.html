@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Curriculum vitae of Nguyen Ngoc Hoang Duong, Software Developer." />
+    <meta name="theme-color" content="#dfe6e4" />
+    <title>Nguyen Ngoc Hoang Duong | CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background-scene" aria-hidden="true">
+      <span class="shape shape-one"></span>
+      <span class="shape shape-two"></span>
+      <span class="shape shape-three"></span>
+      <span class="line line-one"></span>
+      <span class="line line-two"></span>
+    </div>
+
+    <div class="page-actions" aria-label="CV actions">
+      <button class="action-button" type="button" data-print>
+        <i data-lucide="printer" aria-hidden="true"></i>
+        Print CV
+      </button>
+      <a class="action-button primary" href="Nguyen-Ngoc-Hoang-Duong-CV.pdf" download>
+        <i data-lucide="download" aria-hidden="true"></i>
+        Download PDF
+      </a>
+    </div>
+
+    <main class="cv-paper">
+      <header class="profile-header">
+        <div class="portrait-placeholder">
+          <img
+            src="assets/nguyen-ngoc-hoang-duong-profile.jpg"
+            alt="Portrait of Nguyen Ngoc Hoang Duong"
+          />
+        </div>
+
+        <div class="identity">
+          <h1>Nguyen Ngoc Hoang Duong</h1>
+          <p class="job-title">Software Developer</p>
+          <div class="personal-grid">
+            <div><strong>Date of birth</strong><span>June 13, 2005</span></div>
+            <div><strong>Gender</strong><span>Male</span></div>
+            <div>
+              <i data-lucide="phone" aria-hidden="true"></i>
+              <strong>Phone</strong>
+              <a href="tel:+84931301108">0931 301 108</a>
+            </div>
+            <div>
+              <i data-lucide="mail" aria-hidden="true"></i>
+              <strong>Email</strong>
+              <a href="mailto:duongnnh.forwork@gmail.com">duongnnh.forwork@gmail.com</a>
+            </div>
+            <div>
+              <i data-lucide="github" aria-hidden="true"></i>
+              <strong>GitHub</strong>
+              <a href="https://github.com/HelloDuongNha">github.com/HelloDuongNha</a>
+            </div>
+            <div class="address-row">
+              <i data-lucide="map-pin" aria-hidden="true"></i>
+              <strong>Address</strong>
+              <span>Vinhomes Greenbay, Me Tri, Nam Tu Liem, Hanoi</span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="cv-section">
+        <h2>Summary</h2>
+        <p>
+          Careful, responsible, and detail-oriented Software Engineering student. I prefer to understand a problem clearly before implementing it, keep my work organised, and verify important behaviour instead of assuming that it works. I am willing to learn unfamiliar technologies when a project requires them, while still paying attention to readable code, consistent interfaces, and complete results.
+        </p>
+      </section>
+
+      <section class="cv-section">
+        <h2>Technical Skills</h2>
+        <div class="skill-table">
+          <div><strong>Frontend</strong><span>Vue 3, Vite, React, Flutter, Dart, TypeScript, JavaScript and responsive interface development</span></div>
+          <div><strong>Backend</strong><span>Node.js, Express, REST APIs, Socket.IO, JWT, authentication and asynchronous processing</span></div>
+          <div><strong>Applied AI and Data</strong><span>Python, custom RAG pipelines, nomic-embed-text embeddings, prompt construction, structured-output validation, Docling, OCR, evidence validation, evaluation and Ollama</span></div>
+          <div><strong>Databases</strong><span>MongoDB, PostgreSQL, MySQL, Firebase, Room DB and SQLite</span></div>
+          <div><strong>Tools and Deployment</strong><span>Git, GitHub, Docker, Postman, Render, MongoDB Atlas, Cloudinary and Firebase Storage</span></div>
+        </div>
+      </section>
+
+      <section class="cv-section">
+        <h2>Education</h2>
+        <article class="entry">
+          <div class="entry-period">2023 - 2026</div>
+          <div class="entry-content">
+            <h3>University of Greenwich Vietnam</h3>
+            <p class="entry-role">Computing - Software Engineering</p>
+            <ul>
+              <li>Current GPA: 3.5 / 4.0 (before the final project grade is included)</li>
+              <li>Studied Data Structures and Algorithms, Software Engineering, Agile Development with Scrum, Advanced Microservices Development, and Data and Web Analytics.</li>
+              <li>Completed and successfully defended DreamScape as the final-year project.</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+
+      <section class="cv-section">
+        <h2>Work Experience</h2>
+        <article class="entry">
+          <div class="entry-period">Dec 2025 - Feb 2026</div>
+          <div class="entry-content">
+            <h3>Techtack</h3>
+            <p class="entry-role">Frontend Developer Intern</p>
+            <ul>
+              <li>Used Vue 3 and Vite to implement responsive sales and accounting interfaces from existing requirements and designs.</li>
+              <li>Integrated REST APIs and added validation so financial and operational data remained consistent before being displayed in dashboards and charts.</li>
+              <li>Checked completed workflows with real data and presented client-facing demonstrations after feature releases.</li>
+            </ul>
+            <p class="entry-note">Project repositories and demonstrations are confidential under the company NDA.</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="cv-section projects-section">
+        <h2>Personal Projects</h2>
+        <article class="entry project-entry">
+          <div class="entry-period">2026</div>
+          <div class="entry-content">
+            <div class="project-heading">
+              <div>
+                <h3>DreamScape</h3>
+                <p class="entry-role">Project Owner, Full-stack Developer and AI/RAG Pipeline Developer</p>
+              </div>
+              <a class="icon-link" href="https://dreamscape-fe.onrender.com"><i data-lucide="globe-2" aria-hidden="true"></i>Live product</a>
+            </div>
+            <ul>
+              <li><strong>Responsive and HCI design:</strong> built one EN-VI Vue 3 and TypeScript interface for desktop and mobile, with consistent navigation, visible processing states, confirmations, and citations placed near AI-supported content.</li>
+              <li><strong>Modular backend:</strong> separated Express and Mongoose code into authentication, dream, community, messaging, academic knowledge, and Oracle modules without the operational cost of microservices.</li>
+              <li><strong>Automated source pipeline:</strong> resolved DOI metadata and HTML or XML full text, then used PDF, Docling, and OCR fallbacks. Cleaned sections were chunked and embedded before administrator review.</li>
+              <li><strong>Rule and evidence automation:</strong> extracted candidate rules after approval, linked exact evidence passages, matched new sources to unresolved evidence needs, and kept unsupported claims as visible gaps.</li>
+              <li><strong>Grounded AI analysis:</strong> used nomic-embed-text and custom RAG retrieval to select reviewed rules, evidence, personal history, and permitted similar dreams before Oracle generation; backend checks validated structure and citations.</li>
+              <li><strong>Realtime infrastructure and deployment:</strong> combined Socket.IO, MongoDB Atlas, Redis, Cloudinary, and Firebase Storage; deployed the Vue site and Express API on Render, with Ollama, embeddings, Docling, and OCR on a remote NVIDIA T4 environment.</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/HelloDuongNha/Dreamscape-FE"><i data-lucide="github" aria-hidden="true"></i>Frontend repository</a>
+              <a href="https://github.com/HelloDuongNha/Dreamscape-BE"><i data-lucide="github" aria-hidden="true"></i>Backend repository</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="entry project-entry">
+          <div class="entry-period">Feb 2026 - Apr 2026</div>
+          <div class="entry-content">
+            <h3>Expense Tracker System</h3>
+            <p class="entry-role">Mobile and Full-stack Developer</p>
+            <ul>
+              <li><strong>Offline-first user application:</strong> used Flutter and Dart for one mobile codebase, while Room DB and SQLite kept expense entry and history available without an internet connection.</li>
+              <li><strong>Native administration application:</strong> used Android and Java to implement account management, monitoring, and financial analytics while practising platform-specific application design.</li>
+              <li><strong>Realtime synchronisation:</strong> connected Firebase Authentication, Firestore, and Realtime Database through a custom queue so local changes were preserved offline and synchronised when connectivity returned.</li>
+              <li><strong>HCI decisions:</strong> kept transaction actions predictable, used clear form validation and immediate feedback, and separated user and administrator workflows so each interface displayed only the controls needed for its role.</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/HelloDuongNha/expense-tracker-user"><i data-lucide="github" aria-hidden="true"></i>User app repository</a>
+              <a href="https://github.com/HelloDuongNha/expense-tracker-admin"><i data-lucide="github" aria-hidden="true"></i>Admin app repository</a>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="cv-section">
+        <h2>Activities</h2>
+        <article class="entry compact-entry">
+          <div class="entry-period">May 2025 - Apr 2026</div>
+          <div class="entry-content">
+            <h3>Greenwich IT Club</h3>
+            <p class="entry-role">Head of External Relations</p>
+            <p>Built relationships with companies and universities, managed outreach, and co-organised technology events for the student community.</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="cv-section">
+        <h2>Certifications</h2>
+        <div class="simple-row"><strong>2022</strong><span>IELTS 5.5</span></div>
+      </section>
+
+      <section class="cv-section">
+        <h2>Honors and Awards</h2>
+        <div class="simple-row"><strong>Top 3 students of trimester</strong><span>Spring 2025 and Summer 2025</span></div>
+        <div class="simple-row"><strong>Best student by subject</strong><span>Mathematics for Computer, Object-Oriented Programming, User Interface Design, and Application Development</span></div>
+      </section>
+
+      <section class="cv-section">
+        <h2>Interests</h2>
+        <ul class="interest-list">
+          <li><strong>Sports:</strong> badminton, gym training, and swimming.</li>
+          <li><strong>Technology and hardware:</strong> custom PC building, hardware optimisation, audio equipment, and wearable technology.</li>
+          <li><strong>Design and craftsmanship:</strong> structural design, material quality, and practical product aesthetics.</li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
