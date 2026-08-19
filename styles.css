@@ -214,8 +214,8 @@ a {
 
 .personal-grid {
   display: grid;
-  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
-  gap: 5px 24px;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 5px;
 }
 
 .personal-grid > div {
@@ -241,6 +241,10 @@ a {
 
 .personal-grid strong {
   color: #454a49;
+}
+
+.personal-grid a[href*="github.com"] {
+  white-space: nowrap;
 }
 
 .address-row {
@@ -565,6 +569,7 @@ li::before {
   }
 
   .personal-grid {
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
     gap: 1mm 5mm;
   }
 
