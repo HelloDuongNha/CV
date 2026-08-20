@@ -586,14 +586,11 @@ li::before {
     margin-top: 3mm;
   }
 
-  .projects-section {
-    break-before: page;
-  }
-
   .cv-section h2 {
     margin-bottom: 2mm;
     padding-bottom: 0.8mm;
     font-size: 14pt;
+    break-after: avoid;
   }
 
   .skill-table > div {
