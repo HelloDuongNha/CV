@@ -121,9 +121,49 @@ a {
 .page-actions {
   display: flex;
   width: min(100%, var(--page-width));
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: space-between;
   gap: 10px;
   margin: 0 auto 14px;
+}
+
+.action-group,
+.language-switcher {
+  display: flex;
+  align-items: center;
+}
+
+.action-group {
+  gap: 10px;
+}
+
+.language-switcher {
+  overflow: hidden;
+  border: 1px solid #8fa09c;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.language-option {
+  display: grid;
+  min-width: 44px;
+  min-height: 40px;
+  place-items: center;
+  padding-inline: 11px;
+  color: #29423d;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.language-option + .language-option {
+  border-left: 1px solid #8fa09c;
+}
+
+.language-option:hover,
+.language-option:focus-visible,
+.language-option.active {
+  background: var(--accent);
+  color: #fff;
 }
 
 .action-button {
@@ -492,6 +532,15 @@ li::before {
 
 @media (max-width: 460px) {
   .page-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .language-switcher {
+    align-self: flex-start;
+  }
+
+  .action-group {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }

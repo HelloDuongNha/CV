@@ -8,7 +8,7 @@
     <title>Nguyen Ngoc Hoang Duong | CV</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -21,14 +21,20 @@
     </div>
 
     <div class="page-actions" aria-label="CV actions">
-      <button class="action-button" type="button" data-print>
-        <i data-lucide="printer" aria-hidden="true"></i>
-        Print CV
-      </button>
-      <a class="action-button primary" href="Nguyen-Ngoc-Hoang-Duong-CV.pdf" download>
-        <i data-lucide="download" aria-hidden="true"></i>
-        Download PDF
-      </a>
+      <nav class="language-switcher" aria-label="Language">
+        <a class="language-option active" href="/en" lang="en" aria-current="page">EN</a>
+        <a class="language-option" href="/vi" lang="vi">VI</a>
+      </nav>
+      <div class="action-group">
+        <button class="action-button" type="button" data-print>
+          <i data-lucide="printer" aria-hidden="true"></i>
+          Print CV
+        </button>
+        <a class="action-button primary" href="Nguyen-Ngoc-Hoang-Duong-CV.pdf" download>
+          <i data-lucide="download" aria-hidden="true"></i>
+          Download PDF
+        </a>
+      </div>
     </div>
 
     <main class="cv-paper">
