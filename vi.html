@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=2" />
+    <link rel="stylesheet" href="styles.css?v=3" />
   </head>
   <body>
     <div class="background-scene" aria-hidden="true">
@@ -20,11 +20,18 @@
       <span class="line line-two"></span>
     </div>
 
-    <div class="page-actions" aria-label="Thao tác với CV">
+    <header class="language-toolbar">
       <nav class="language-switcher" aria-label="Ngôn ngữ">
-        <a class="language-option" href="/en" lang="en">EN</a>
-        <a class="language-option active" href="/vi" lang="vi" aria-current="page">VI</a>
+        <span class="language-label"><i data-lucide="languages" aria-hidden="true"></i>Ngôn ngữ</span>
+        <span class="language-options">
+          <a class="language-option" href="/en" lang="en">EN</a>
+          <a class="language-option active" href="/vi" lang="vi" aria-current="page">VI</a>
+        </span>
       </nav>
+    </header>
+
+    <div class="cv-scroll">
+      <div class="page-actions" aria-label="Thao tác với CV">
       <div class="action-group">
         <button class="action-button" type="button" data-print>
           <i data-lucide="printer" aria-hidden="true"></i>
@@ -35,7 +42,7 @@
           Tải PDF
         </a>
       </div>
-    </div>
+      </div>
 
     <main class="cv-paper">
       <header class="profile-header">
@@ -217,9 +224,10 @@
           <li><strong>Nghệ thuật và thẩm mỹ:</strong> yêu thích nghệ thuật, chú ý đến chi tiết, màu sắc, bố cục và chất lượng hoàn thiện của sản phẩm.</li>
         </ul>
       </section>
-    </main>
+      </main>
+    </div>
 
     <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
-    <script src="app.js?v=2"></script>
+    <script src="app.js?v=3"></script>
   </body>
 </html>
