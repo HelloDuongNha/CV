@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=3" />
+    <link rel="stylesheet" href="styles.css?v=4" />
   </head>
   <body>
     <div class="background-scene" aria-hidden="true">
@@ -22,8 +22,16 @@
 
     <header class="utility-toolbar">
       <div class="utility-actions" role="toolbar" aria-label="CV tools">
-        <button class="toolbar-button" type="button" data-language-toggle aria-label="Switch to Vietnamese" data-tooltip="Tiếng Việt">
+        <div class="language-control" role="group" aria-label="Language">
           <i data-lucide="languages" aria-hidden="true"></i>
+          <div class="language-segments">
+            <button class="language-option active" type="button" data-locale="en" aria-pressed="true">EN</button>
+            <button class="language-option" type="button" data-locale="vi" aria-pressed="false">VI</button>
+          </div>
+        </div>
+        <button class="toolbar-button" type="button" data-theme-toggle aria-label="Enable dark mode" data-tooltip="Dark mode">
+          <i class="theme-icon theme-icon-dark" data-lucide="moon" aria-hidden="true"></i>
+          <i class="theme-icon theme-icon-light" data-lucide="sun" aria-hidden="true"></i>
         </button>
         <button class="toolbar-button" type="button" data-print aria-label="Print CV" data-tooltip="Print CV">
           <i data-lucide="printer" aria-hidden="true"></i>
@@ -219,7 +227,7 @@
     </div>
 
     <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
-    <script src="locales.js?v=1"></script>
-    <script src="app.js?v=4"></script>
+    <script src="locales.js?v=2"></script>
+    <script src="app.js?v=5"></script>
   </body>
 </html>

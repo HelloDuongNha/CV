@@ -11,7 +11,7 @@ When deployed on Vercel, the shareable language routes are:
 - `/en`: English CV.
 - `/vi`: Vietnamese CV.
 
-The icon toolbar switches languages in the current page without a reload. The browser History API updates the clean URL on Vercel and uses a local query parameter when the HTML file is opened directly. The `vercel.json` file serves the same application entry point for both deployed routes.
+The toolbar switches languages in the current page without a reload and provides print, PDF download and a persistent light/dark theme. The browser History API updates the clean URL on Vercel and uses a local query parameter when the HTML file is opened directly. The `vercel.json` file serves the same application entry point for both deployed routes.
 
 ## Main files
 
