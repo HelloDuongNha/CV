@@ -14,7 +14,7 @@ window.CV_I18N = {
     pdf: 'Nguyen-Ngoc-Hoang-Duong-CV.pdf'
   },
   vi: {
-    title: 'Nguyen Ngoc Hoang Duong | CV',
+    title: 'Nguyễn Ngọc Hoàng Dương | CV',
     description: 'CV của Nguyễn Ngọc Hoàng Dương, Lập trình viên phần mềm.',
     portraitAlt: 'Ảnh chân dung của Nguyễn Ngọc Hoàng Dương',
     toolbarLabel: 'Công cụ CV',
@@ -27,7 +27,7 @@ window.CV_I18N = {
     downloadLabel: 'Tải PDF',
     pdf: 'Nguyen-Ngoc-Hoang-Duong-CV-VI.pdf',
     text: [
-      'Nguyen Ngoc Hoang Duong',
+      'Nguyễn Ngọc Hoàng Dương',
       'Lập trình viên phần mềm',
       'Ngày sinh',
       '13/06/2005',
