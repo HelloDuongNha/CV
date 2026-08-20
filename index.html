@@ -20,30 +20,21 @@
       <span class="line line-two"></span>
     </div>
 
-    <header class="language-toolbar">
-      <nav class="language-switcher" aria-label="Language">
-        <span class="language-label"><i data-lucide="languages" aria-hidden="true"></i>Language</span>
-        <span class="language-options">
-          <a class="language-option active" href="/en" lang="en" aria-current="page">EN</a>
-          <a class="language-option" href="/vi" lang="vi">VI</a>
-        </span>
-      </nav>
+    <header class="utility-toolbar">
+      <div class="utility-actions" role="toolbar" aria-label="CV tools">
+        <button class="toolbar-button" type="button" data-language-toggle aria-label="Switch to Vietnamese" data-tooltip="Tiếng Việt">
+          <i data-lucide="languages" aria-hidden="true"></i>
+        </button>
+        <button class="toolbar-button" type="button" data-print aria-label="Print CV" data-tooltip="Print CV">
+          <i data-lucide="printer" aria-hidden="true"></i>
+        </button>
+        <a class="toolbar-button primary" href="Nguyen-Ngoc-Hoang-Duong-CV.pdf" download data-download aria-label="Download PDF" data-tooltip="Download PDF">
+          <i data-lucide="download" aria-hidden="true"></i>
+        </a>
+      </div>
     </header>
 
     <div class="cv-scroll">
-      <div class="page-actions" aria-label="CV actions">
-      <div class="action-group">
-        <button class="action-button" type="button" data-print>
-          <i data-lucide="printer" aria-hidden="true"></i>
-          Print CV
-        </button>
-        <a class="action-button primary" href="Nguyen-Ngoc-Hoang-Duong-CV.pdf" download>
-          <i data-lucide="download" aria-hidden="true"></i>
-          Download PDF
-        </a>
-      </div>
-      </div>
-
     <main class="cv-paper">
       <header class="profile-header">
         <div class="portrait-placeholder">
@@ -228,6 +219,7 @@
     </div>
 
     <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
-    <script src="app.js?v=3"></script>
+    <script src="locales.js?v=1"></script>
+    <script src="app.js?v=4"></script>
   </body>
 </html>

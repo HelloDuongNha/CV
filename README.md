@@ -4,21 +4,21 @@ Responsive web CV for Nguyen Ngoc Hoang Duong, a Software Engineering student an
 
 ## View locally
 
-Open `index.html` directly in a browser. The page includes separate controls for printing the CV and downloading the prepared two-page PDF.
+Open `index.html` directly in a browser or serve this folder with a static web server. The page includes icon controls for switching language, printing the CV and downloading the prepared two-page PDF.
 
 When deployed on Vercel, the shareable language routes are:
 
 - `/en`: English CV.
 - `/vi`: Vietnamese CV.
 
-The language switcher keeps both versions directly accessible, while `vercel.json` maps the clean URLs to their static HTML files.
+The icon toolbar switches languages in the current page without a reload. The browser History API updates the clean URL on Vercel and uses a local query parameter when the HTML file is opened directly. The `vercel.json` file serves the same application entry point for both deployed routes.
 
 ## Main files
 
 - `index.html`: CV content and semantic structure.
-- `vi.html`: Vietnamese CV content.
+- `locales.js`: Vietnamese content and locale-specific metadata.
 - `styles.css`: responsive screen layout and A4 print styles.
-- `app.js`: print action and interface icon initialisation.
+- `app.js`: in-page i18n, URL history, print, download and icon initialisation.
 - `assets/nguyen-ngoc-hoang-duong-profile.jpg`: optimised profile photograph.
 - `Nguyen-Ngoc-Hoang-Duong-CV.pdf`: printable CV.
 - `Nguyen-Ngoc-Hoang-Duong-CV-VI.pdf`: printable Vietnamese CV.
