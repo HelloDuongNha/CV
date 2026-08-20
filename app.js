@@ -81,6 +81,7 @@ const applyLocale = (locale) => {
   portrait?.setAttribute('alt', config.portraitAlt)
   toolbar?.setAttribute('aria-label', config.toolbarLabel)
   languageControl?.setAttribute('aria-label', config.languageLabel)
+  languageControl.dataset.active = locale
   languageButtons.forEach((button) => {
     const isActive = button.dataset.locale === locale
     button.classList.toggle('active', isActive)
