@@ -708,7 +708,7 @@ li::before {
 
   .background-scene,
   .utility-toolbar {
-    display: none;
+    display: none !important;
   }
 
   .cv-scroll {
@@ -717,45 +717,65 @@ li::before {
   }
 
   .cv-paper {
-    width: 100%;
+    width: 100% !important;
     margin: 0;
-    padding: 0;
+    padding: 0 !important;
     box-shadow: none;
   }
 
+  /* ── Profile header: force desktop two-column layout ── */
   .profile-header {
-    grid-template-columns: 35mm minmax(0, 1fr);
-    gap: 8mm;
-    padding-bottom: 4mm;
+    display: grid !important;
+    grid-template-columns: 35mm minmax(0, 1fr) !important;
+    gap: 8mm !important;
+    padding: 0 6px 4mm !important;
   }
 
   .portrait-placeholder {
-    width: 35mm;
+    width: 35mm !important;
   }
 
   .identity h1 {
-    font-size: 27pt;
+    margin-top: -6px;
+    font-size: 27pt !important;
   }
 
   .job-title {
     margin-bottom: 2mm;
-    font-size: 14pt;
+    font-size: 14pt !important;
   }
 
+  /* ── Personal grid: force desktop multi-column layout ── */
   .personal-grid {
-    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
-    gap: 1mm 5mm;
+    display: grid !important;
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr) !important;
+    gap: 1mm 5mm !important;
   }
 
   .personal-grid > div {
-    grid-template-columns: 4mm 22mm 1fr;
-    gap: 1mm;
+    display: grid !important;
+    grid-template-columns: 4mm 22mm 1fr !important;
+    gap: 1mm !important;
   }
 
   .personal-grid > div:not(:has(svg)) {
-    grid-template-columns: 27mm 1fr;
+    grid-template-columns: 27mm 1fr !important;
   }
 
+  /* Reset mobile 3-col override for non-svg rows */
+  .personal-grid > div:not(:has(svg))::before {
+    content: none !important;
+  }
+
+  .personal-grid > div:not(:has(svg)) strong {
+    grid-column: 1 !important;
+  }
+
+  .address-row {
+    grid-column: 1 / -1 !important;
+  }
+
+  /* ── Sections ── */
   .cv-section {
     margin-top: 3mm;
   }
@@ -763,17 +783,22 @@ li::before {
   .cv-section h2 {
     margin-bottom: 2mm;
     padding-bottom: 0.8mm;
-    font-size: 14pt;
+    font-size: 14pt !important;
     break-after: avoid;
   }
 
+  /* ── Skill table: force desktop two-column layout ── */
   .skill-table > div {
-    grid-template-columns: 39mm minmax(0, 1fr);
+    display: grid !important;
+    grid-template-columns: 39mm minmax(0, 1fr) !important;
   }
 
-  .entry,
-  .simple-row {
-    grid-template-columns: 35mm minmax(0, 1fr);
+  .skill-table strong {
+    padding-bottom: 8px !important;
+  }
+
+  .skill-table span {
+    padding-top: 8px !important;
   }
 
   .skill-table strong,
@@ -782,8 +807,15 @@ li::before {
     padding-block: 1.2mm;
   }
 
+  /* ── Entries: force desktop two-column layout ── */
+  .entry,
+  .simple-row {
+    display: grid !important;
+    grid-template-columns: 35mm minmax(0, 1fr) !important;
+    gap: 3mm !important;
+  }
+
   .entry {
-    gap: 3mm;
     padding-bottom: 2mm;
     break-inside: avoid;
   }
@@ -792,12 +824,24 @@ li::before {
     padding-top: 2mm;
   }
 
+  .entry-period {
+    color: var(--strong-ink) !important;
+  }
+
   .entry-content h3 {
     font-size: 12pt;
   }
 
   .entry-role {
     font-size: 9.5pt;
+  }
+
+  /* ── Project heading: force desktop flex layout ── */
+  .project-heading {
+    display: flex !important;
+    justify-content: space-between;
+    gap: 18px;
+    align-items: start;
   }
 
   li {
