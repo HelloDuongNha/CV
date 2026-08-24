@@ -745,11 +745,11 @@ li::before {
     font-size: 14pt !important;
   }
 
-  /* ── Personal grid: force desktop multi-column layout ── */
+  /* ── Personal grid: force desktop single-column layout ── */
   .personal-grid {
     display: grid !important;
-    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr) !important;
-    gap: 1mm 5mm !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 5px !important;
   }
 
   .personal-grid > div {
