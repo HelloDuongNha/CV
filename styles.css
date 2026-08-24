@@ -673,7 +673,7 @@ li::before {
 @media print {
   @page {
     size: A4;
-    margin: 10mm 11mm;
+    margin: 8mm 10mm;
   }
 
   html[data-theme] {
@@ -702,8 +702,8 @@ li::before {
   body {
     display: block;
     padding: 0;
-    font-size: 8.4pt;
-    line-height: 1.3;
+    font-size: 7.8pt;
+    line-height: 1.22;
   }
 
   .background-scene,
@@ -726,40 +726,40 @@ li::before {
   /* ── Profile header: force desktop two-column layout ── */
   .profile-header {
     display: grid !important;
-    grid-template-columns: 35mm minmax(0, 1fr) !important;
-    gap: 8mm !important;
-    padding: 0 6px 4mm !important;
+    grid-template-columns: 30mm minmax(0, 1fr) !important;
+    gap: 6mm !important;
+    padding: 0 4px 3mm !important;
   }
 
   .portrait-placeholder {
-    width: 35mm !important;
+    width: 30mm !important;
   }
 
   .identity h1 {
-    margin-top: -6px;
-    font-size: 27pt !important;
+    margin-top: -4px;
+    font-size: 22pt !important;
   }
 
   .job-title {
-    margin-bottom: 2mm;
-    font-size: 14pt !important;
+    margin-bottom: 1mm;
+    font-size: 12pt !important;
   }
 
   /* ── Personal grid: force desktop single-column layout ── */
   .personal-grid {
     display: grid !important;
     grid-template-columns: minmax(0, 1fr) !important;
-    gap: 5px !important;
+    gap: 1px !important;
   }
 
   .personal-grid > div {
     display: grid !important;
-    grid-template-columns: 4mm 22mm 1fr !important;
+    grid-template-columns: 4mm 20mm 1fr !important;
     gap: 1mm !important;
   }
 
   .personal-grid > div:not(:has(svg)) {
-    grid-template-columns: 27mm 1fr !important;
+    grid-template-columns: 25mm 1fr !important;
   }
 
   /* Reset mobile 3-col override for non-svg rows */
@@ -777,84 +777,106 @@ li::before {
 
   /* ── Sections ── */
   .cv-section {
-    margin-top: 3mm;
+    margin-top: 2mm;
   }
 
   .cv-section h2 {
-    margin-bottom: 2mm;
-    padding-bottom: 0.8mm;
-    font-size: 14pt !important;
+    margin-bottom: 1.5mm;
+    padding-bottom: 0.5mm;
+    font-size: 12pt !important;
     break-after: avoid;
+  }
+
+  .cv-section > p,
+  .interest-list {
+    margin: 0 4px;
   }
 
   /* ── Skill table: force desktop two-column layout ── */
   .skill-table > div {
     display: grid !important;
-    grid-template-columns: 39mm minmax(0, 1fr) !important;
-  }
-
-  .skill-table strong {
-    padding-bottom: 8px !important;
-  }
-
-  .skill-table span {
-    padding-top: 8px !important;
+    grid-template-columns: 36mm minmax(0, 1fr) !important;
   }
 
   .skill-table strong,
-  .skill-table span,
+  .skill-table span {
+    padding: 0.8mm 4px !important;
+  }
+
   .simple-row {
-    padding-block: 1.2mm;
+    padding-block: 0.8mm;
   }
 
   /* ── Entries: force desktop two-column layout ── */
   .entry,
   .simple-row {
     display: grid !important;
-    grid-template-columns: 35mm minmax(0, 1fr) !important;
-    gap: 3mm !important;
+    grid-template-columns: 32mm minmax(0, 1fr) !important;
+    gap: 2mm !important;
   }
 
   .entry {
-    padding-bottom: 2mm;
-    break-inside: avoid;
+    padding-bottom: 1.5mm;
   }
 
   .entry + .entry {
-    padding-top: 2mm;
+    padding-top: 1.5mm;
   }
 
   .entry-period {
     color: var(--strong-ink) !important;
+    font-size: 7.8pt;
   }
 
   .entry-content h3 {
-    font-size: 12pt;
+    font-size: 10.5pt;
+    margin: -1px 0 0;
   }
 
   .entry-role {
-    font-size: 9.5pt;
+    font-size: 8.5pt;
+    margin-bottom: 1px;
   }
 
   /* ── Project heading: force desktop flex layout ── */
   .project-heading {
     display: flex !important;
     justify-content: space-between;
-    gap: 18px;
+    gap: 12px;
     align-items: start;
   }
 
   li {
     margin: 0;
+    padding-left: 12px;
   }
 
   .projects-section {
-    line-height: 1.26;
+    line-height: 1.2;
+  }
+
+  .entry-note {
+    margin-top: 1mm;
+    font-size: 7pt;
+  }
+
+  .project-links {
+    margin-top: 1mm;
+    gap: 1px 14px;
+    font-size: 7.5pt;
   }
 
   .icon-link,
   .project-links a {
     min-height: 0;
+  }
+
+  .icon-link {
+    font-size: 7.5pt;
+  }
+
+  ul {
+    margin-top: 1px;
   }
 
   a {
