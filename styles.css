@@ -385,20 +385,23 @@ html[data-theme="dark"] .theme-icon-light {
   display: grid;
   grid-template-columns: 18px 93px minmax(0, 1fr);
   gap: 7px;
-  align-items: start;
+  align-items: center;
   min-width: 0;
 }
 
 .personal-grid > div:not(:has(svg)) {
-  grid-template-columns: 118px minmax(0, 1fr);
+  grid-template-columns: 18px 93px minmax(0, 1fr);
+}
+
+.personal-grid > div:not(:has(svg))::before {
+  content: "";
 }
 
 .personal-grid > div:not(:has(svg)) strong {
-  grid-column: 1;
+  grid-column: 2;
 }
 
 .personal-grid svg {
-  margin-top: 2px;
   color: var(--accent);
 }
 
@@ -538,6 +541,23 @@ li::before {
   font-size: 13px;
 }
 
+.dreamscape-links {
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 12px;
+}
+
+.dreamscape-links a {
+  min-width: 0;
+  white-space: nowrap;
+}
+
+.dreamscape-links a::after {
+  content: ": " attr(data-display-url);
+  font-weight: 500;
+}
+
 .compact-entry .entry-content > p:last-child {
   margin-bottom: 0;
 }
@@ -652,6 +672,15 @@ li::before {
   .project-heading {
     display: block;
   }
+
+  .dreamscape-links {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .dreamscape-links a {
+    white-space: normal;
+  }
 }
 
 @media (max-width: 460px) {
@@ -764,16 +793,15 @@ li::before {
   }
 
   .personal-grid > div:not(:has(svg)) {
-    grid-template-columns: 25mm 1fr !important;
+    grid-template-columns: 4mm 20mm 1fr !important;
   }
 
-  /* Reset mobile 3-col override for non-svg rows */
   .personal-grid > div:not(:has(svg))::before {
-    content: none !important;
+    content: "" !important;
   }
 
   .personal-grid > div:not(:has(svg)) strong {
-    grid-column: 1 !important;
+    grid-column: 2 !important;
   }
 
   .address-row {
@@ -878,6 +906,13 @@ li::before {
     margin-top: 1mm;
     gap: 1px 14px;
     font-size: 7.5pt;
+  }
+
+  .dreamscape-links {
+    flex-wrap: nowrap !important;
+    justify-content: space-between;
+    gap: 2mm;
+    font-size: 6.2pt;
   }
 
   .icon-link,
