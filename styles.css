@@ -318,12 +318,18 @@ html[data-theme="dark"] .theme-icon-light {
   transform: translateY(0);
 }
 
-.toolbar-button svg,
+.toolbar-button svg {
+  width: 17px;
+  height: 17px;
+  flex: 0 0 auto;
+  stroke-width: 2;
+}
+
 .personal-grid svg,
 .project-links svg,
 .icon-link svg {
-  width: 17px;
-  height: 17px;
+  width: 15px;
+  height: 15px;
   flex: 0 0 auto;
   stroke-width: 2;
 }
