@@ -378,7 +378,7 @@ html[data-theme="dark"] .theme-icon-light {
 .personal-grid {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
-  gap: 5px;
+  gap: 8px;
 }
 
 .personal-grid > div {
@@ -553,7 +553,18 @@ li::before {
   white-space: nowrap;
 }
 
-.dreamscape-links a::after {
+.expense-links {
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  gap: 20px;
+  font-size: 12px;
+}
+
+.expense-links a {
+  white-space: nowrap;
+}
+
+.project-links a[data-display-url]::after {
   content: ": " attr(data-display-url);
   font-weight: 500;
 }
@@ -622,7 +633,7 @@ li::before {
 
   .personal-grid {
     grid-template-columns: 1fr;
-    gap: 5px;
+    gap: 7px;
   }
 
   .personal-grid > div,
@@ -678,7 +689,12 @@ li::before {
     justify-content: flex-start;
   }
 
-  .dreamscape-links a {
+  .expense-links {
+    flex-wrap: wrap;
+  }
+
+  .dreamscape-links a,
+  .expense-links a {
     white-space: normal;
   }
 }
@@ -783,7 +799,7 @@ li::before {
   .personal-grid {
     display: grid !important;
     grid-template-columns: minmax(0, 1fr) !important;
-    gap: 1px !important;
+    gap: 0.8mm !important;
   }
 
   .personal-grid > div {
@@ -913,6 +929,12 @@ li::before {
     justify-content: space-between;
     gap: 2mm;
     font-size: 6.2pt;
+  }
+
+  .expense-links {
+    flex-wrap: nowrap !important;
+    gap: 3mm;
+    font-size: 6.5pt;
   }
 
   .icon-link,
