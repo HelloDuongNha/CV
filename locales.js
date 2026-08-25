@@ -39,6 +39,8 @@ window.CV_I18N = {
       'duongnnh.forwork@gmail.com',
       'GitHub',
       'github.com/HelloDuongNha',
+      'LinkedIn',
+      'linkedin.com/in/duongnnh',
       'Địa chỉ',
       'Vinhomes Greenbay, Mễ Trì, Nam Từ Liêm, Hà Nội',
       'Giới thiệu',
