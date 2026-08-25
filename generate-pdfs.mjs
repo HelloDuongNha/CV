@@ -18,6 +18,9 @@ try {
   for (const output of outputs) {
     const page = await browser.newPage({ viewport: { width: 1440, height: 900 } })
     await page.goto(`${baseUrl}?lang=${output.locale}`, { waitUntil: 'networkidle' })
+    await page.evaluate(() => {
+      document.documentElement.dataset.pdfColor = 'true'
+    })
     await page.emulateMedia({ media: 'print', colorScheme: 'light' })
     await page.pdf({
       path: output.file,

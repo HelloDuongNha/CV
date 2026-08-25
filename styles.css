@@ -908,4 +908,33 @@ li::before {
     color: #202020 !important;
     stroke: #202020 !important;
   }
+
+  html[data-theme][data-pdf-color="true"] {
+    --ink: #3d4140;
+    --heading: #333736;
+    --muted: #666d6b;
+    --accent: #087d72;
+    --accent-dark: #12534d;
+    --accent-soft: #e5f1ef;
+    --line: #dfe4e3;
+    --strong-ink: #454a49;
+    --section-rule: #303433;
+    --portrait-border: #e3e8e7;
+    --portrait-bg: #f5f7f6;
+  }
+
+  html[data-pdf-color="true"] a {
+    color: var(--accent) !important;
+  }
+
+  html[data-pdf-color="true"] .portrait-placeholder img {
+    filter: none;
+  }
+
+  html[data-pdf-color="true"] svg,
+  html[data-pdf-color="true"] li::before,
+  html[data-pdf-color="true"] .personal-grid svg {
+    color: var(--accent) !important;
+    stroke: var(--accent) !important;
+  }
 }
