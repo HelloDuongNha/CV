@@ -534,24 +534,24 @@ li::before {
 .icon-link,
 .project-links a {
   display: inline-flex;
-  min-height: 36px;
+  min-height: 24px;
   align-items: center;
-  gap: 6px;
+  gap: 4px;
 }
 
 .project-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 2px 20px;
-  margin-top: 9px;
-  font-size: 13px;
+  gap: 1px 14px;
+  margin-top: 6px;
+  font-size: 11px;
+  line-height: 1.25;
 }
 
 .dreamscape-links {
   flex-direction: column;
   align-items: flex-start;
-  gap: 4px;
-  font-size: 12px;
+  gap: 1px;
 }
 
 .dreamscape-links a {
@@ -562,8 +562,7 @@ li::before {
 .expense-links {
   flex-direction: column;
   align-items: flex-start;
-  gap: 4px;
-  font-size: 12px;
+  gap: 1px;
 }
 
 .expense-links a {
