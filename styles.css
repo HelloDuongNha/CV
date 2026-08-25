@@ -439,7 +439,7 @@ html[data-theme="dark"] .theme-icon-light {
 
 .skill-table > div {
   display: grid;
-  grid-template-columns: 205px minmax(0, 1fr);
+  grid-template-columns: 1fr;
   border-bottom: 1px solid var(--line);
 }
 
@@ -450,12 +450,17 @@ html[data-theme="dark"] .theme-icon-light {
 
 .skill-table strong {
   color: var(--strong-ink);
+  padding-bottom: 0;
+}
+
+.skill-table span {
+  padding-top: 3px;
 }
 
 .entry {
   display: grid;
-  grid-template-columns: 205px minmax(0, 1fr);
-  gap: 22px;
+  grid-template-columns: 1fr;
+  gap: 5px;
   padding: 0 7px 19px;
   border-bottom: 1px solid var(--line);
 }
@@ -465,7 +470,7 @@ html[data-theme="dark"] .theme-icon-light {
 }
 
 .entry-period {
-  color: var(--strong-ink);
+  color: var(--accent);
   font-weight: 700;
 }
 
@@ -539,8 +544,8 @@ li::before {
 
 .simple-row {
   display: grid;
-  grid-template-columns: 205px minmax(0, 1fr);
-  gap: 22px;
+  grid-template-columns: 1fr;
+  gap: 4px;
   padding: 8px 7px;
   border-bottom: 1px solid var(--line);
 }
@@ -682,14 +687,14 @@ li::before {
     --ink: #3d4140;
     --heading: #333736;
     --muted: #666d6b;
-    --accent: #087d72;
-    --accent-dark: #12534d;
-    --accent-soft: #e5f1ef;
-    --line: #dfe4e3;
+    --accent: #202020;
+    --accent-dark: #111111;
+    --accent-soft: #eeeeee;
+    --line: #cfcfcf;
     --strong-ink: #454a49;
     --section-rule: #303433;
-    --portrait-border: #e3e8e7;
-    --portrait-bg: #f5f7f6;
+    --portrait-border: #cfcfcf;
+    --portrait-bg: #f4f4f4;
   }
 
   html,
@@ -792,31 +797,40 @@ li::before {
     margin: 0 4px;
   }
 
-  /* ── Skill table: force desktop two-column layout ── */
+  /* Keep skill labels above their descriptions in the same reading flow. */
   .skill-table > div {
     display: grid !important;
-    grid-template-columns: 36mm minmax(0, 1fr) !important;
+    grid-template-columns: 1fr !important;
   }
 
   .skill-table strong,
   .skill-table span {
-    padding: 0.8mm 4px !important;
+    padding: 0.4mm 4px !important;
+  }
+
+  .skill-table strong {
+    padding-bottom: 0 !important;
+  }
+
+  .skill-table span {
+    padding-top: 0 !important;
   }
 
   .simple-row {
     padding-block: 0.8mm;
   }
 
-  /* ── Entries: force desktop two-column layout ── */
+  /* Keep dates above content so the printed CV follows the screen reading order. */
   .entry,
   .simple-row {
     display: grid !important;
-    grid-template-columns: 32mm minmax(0, 1fr) !important;
-    gap: 2mm !important;
+    grid-template-columns: 1fr !important;
+    gap: 0.5mm !important;
   }
 
   .entry {
     padding-bottom: 1.5mm;
+    break-inside: avoid;
   }
 
   .entry + .entry {
@@ -824,7 +838,7 @@ li::before {
   }
 
   .entry-period {
-    color: var(--strong-ink) !important;
+    color: #3f3f3f !important;
     font-size: 7.8pt;
   }
 
@@ -880,6 +894,18 @@ li::before {
   }
 
   a {
+    color: #202020 !important;
     text-decoration: none;
+  }
+
+  .portrait-placeholder img {
+    filter: grayscale(1);
+  }
+
+  svg,
+  li::before,
+  .personal-grid svg {
+    color: #202020 !important;
+    stroke: #202020 !important;
   }
 }

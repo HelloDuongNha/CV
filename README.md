@@ -19,6 +19,7 @@ The toolbar switches languages in the current page without a reload and provides
 - `locales.js`: Vietnamese content and locale-specific metadata.
 - `styles.css`: responsive screen layout and A4 print styles.
 - `app.js`: in-page i18n, URL history, print, download and icon initialisation.
+- `generate-pdfs.mjs`: generates both monochrome downloadable PDFs from the same one-column web layout.
 - `assets/nguyen-ngoc-hoang-duong-profile.jpg`: optimised profile photograph.
 - `Nguyen-Ngoc-Hoang-Duong-CV.pdf`: printable CV.
 - `Nguyen-Ngoc-Hoang-Duong-CV-VI.pdf`: printable Vietnamese CV.
