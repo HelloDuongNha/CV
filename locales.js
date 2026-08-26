@@ -60,7 +60,7 @@ window.CV_I18N = {
       '2023 - 2026',
       'University of Greenwich Vietnam',
       'Công nghệ thông tin - Kỹ thuật phần mềm',
-      'GPA hiện tại: 3.5 / 4.0 (chưa bao gồm điểm đồ án tốt nghiệp)',
+      'GPA hiện tại: 3.95 / 4.0 (chưa bao gồm điểm đồ án tốt nghiệp)',
       'Đã học Cấu trúc dữ liệu và giải thuật, Kỹ thuật phần mềm, Phát triển Agile với Scrum, Phát triển Microservices nâng cao, Phân tích dữ liệu và web.',
       'Đã hoàn thành và bảo vệ thành công DreamScape với vai trò đồ án tốt nghiệp.',
       'Kinh nghiệm làm việc',
